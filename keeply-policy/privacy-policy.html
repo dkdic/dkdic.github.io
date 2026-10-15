@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy · Keeply</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--muted:#5f6368;--line:#e3e3e8;--accent:#d6336c;--th:#f6f6f8}
+@media (prefers-color-scheme:dark){:root{--bg:#121214;--fg:#ececf0;--muted:#a0a0a8;--line:#2c2c32;--accent:#ff6b9a;--th:#1c1c20}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.7rem;line-height:1.3;margin:.2em 0 .6em}
+h2{font-size:1.25rem;margin:2em 0 .6em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+a{color:var(--accent);word-break:break-word}
+hr{display:none}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;min-width:100%;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--th)}
+code{font-size:.9em;background:var(--th);padding:1px 4px;border-radius:4px}
+ul,ol{padding-left:1.4em}
+li{margin:.25em 0}
+/* 상단 언어 전환: 앱 WebView 에서 손가락으로 누르기 쉬운 크기 */
+.lang-switch{display:flex;justify-content:flex-end;gap:6px;margin:0 0 8px}
+.lang-switch a,.lang-switch span{display:inline-block;min-height:36px;padding:7px 14px;border:1px solid var(--line);border-radius:18px;font-size:.9rem;line-height:1.4;text-decoration:none}
+.lang-switch span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+footer{max-width:860px;margin:0 auto;padding:16px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer a{margin-right:14px}
+</style>
+</head>
+<body>
+<main>
+<nav class="lang-switch" aria-label="Language"><span aria-current="page">English</span><a href="ko/privacy-policy.html" hreflang="ko" lang="ko">한국어</a></nav>
+<h1 id="keeply-privacy-policy">Keeply Privacy Policy</h1>
+<p><strong>Effective date:</strong> {{EFFECTIVE_DATE}}<br><strong>Last updated:</strong> {{EFFECTIVE_DATE}}</p>
+<p>This Privacy Policy explains how {{OPERATOR_NAME}} ("<strong>we</strong>", "<strong>us</strong>") processes personal data when you use the Keeply mobile application for Android (the "<strong>App</strong>"). It applies worldwide. Section 12 adds the information that specific laws require for users in certain regions (EEA/UK/Switzerland, the United States, Brazil, the Republic of Korea and others).</p>
+<p>For the purposes of the EU and UK General Data Protection Regulation ("<strong>GDPR</strong>"), the Korean Personal Information Protection Act ("<strong>PIPA</strong>") and similar laws, we are the <strong>controller</strong> of the personal data described here.</p>
+<hr>
+<h2 id="1-summary">1. Summary</h2>
+<ul>
+<li><strong>No account, no login.</strong> We do not ask for your name, email address or phone number to use the App.
+</li>
+<li><strong>No own servers.</strong> We do not operate servers that store your data. Media you download, links you paste, your library and your Hidden Vault stay <strong>on your device</strong> and are never sent to us.
+</li>
+<li><strong>Google services.</strong> The App uses Google AdMob (ads), Google Firebase (analytics, crash reporting, notifications, remote configuration) and Google Play Billing (payments). These services process device identifiers and usage data as described below.
+</li>
+<li><strong>Your choice.</strong> Where the law requires consent (for example in the EEA, UK and Switzerland), we ask for it before using analytics or advertising identifiers. You can change your choice at any time in <strong>Settings &gt; Privacy choices</strong> in the App (shown in regions where it applies, such as the EEA, UK, Switzerland and US states with privacy laws).
+</li>
+<li><strong>Personalized ads in Korea only with your consent.</strong> For users in the Republic of Korea, the App shows personalized ads only if you give separate, optional consent on the first-launch screen; otherwise it requests only non-personalized ads. You can change this anytime in <strong>Settings &gt; Personalized ads</strong>.
+</li>
+<li><strong>We do not sell your personal data for money.</strong> Some US state laws treat personalized advertising as "selling" or "sharing"; see Section 12.2 for how to opt out.
+</li></ul>
+<hr>
+<h2 id="2-who-we-are-and-how-to-contact-us">2. Who we are and how to contact us</h2>
+<p>We are an individual developer.</p>
+<div class="table-wrap"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Controller</td><td>{{OPERATOR_NAME}}</td></tr><tr><td>Address</td><td>{{OPERATOR_ADDRESS}}</td></tr><tr><td>Email</td><td>{{CONTACT_EMAIL}}</td></tr><tr><td>Privacy officer (Data protection contact)</td><td>{{OPERATOR_NAME}}, {{CONTACT_EMAIL}}</td></tr><tr><td>EU representative (GDPR Art. 27)</td><td>Not appointed</td></tr><tr><td>UK representative (UK GDPR Art. 27)</td><td>Not appointed</td></tr></tbody></table></div>
+<p>You can contact us by email about any matter in this Policy, in English or Korean.</p>
+<hr>
+<h2 id="3-personal-data-we-process">3. Personal data we process</h2>
+<div class="table-wrap"><table><thead><tr><th>Category</th><th>Data</th><th>How it is collected</th></tr></thead><tbody><tr><td>Device and online identifiers</td><td>Advertising ID (Google Advertising ID), App set ID, Firebase installation ID, app instance ID, Firebase Cloud Messaging (FCM) registration token, Crashlytics installation UUID</td><td>Generated or read automatically by the SDKs when the App runs</td></tr><tr><td>Device information</td><td>Device model, operating system version, language and region settings, app version, network type, mobile carrier</td><td>Automatically</td></tr><tr><td>Network data</td><td>IP address (used to estimate approximate country/region; not precise location), timestamps</td><td>Automatically</td></tr><tr><td>App activity</td><td>Automatically collected app events (such as first open, app updates, session start and screens viewed), ad impressions and clicks</td><td>Automatically</td></tr><tr><td>Diagnostics</td><td>Crash logs, stack traces, time of crash, device state (memory, disk)</td><td>Automatically when the App crashes</td></tr><tr><td>Purchase information (VIP only)</td><td>Google Play order ID, purchase token, product and plan, purchase/renewal/cancellation dates, subscription status</td><td>Provided by Google Play Billing</td></tr><tr><td>Consent records</td><td>Your consent choices and the time you made them (e.g., IAB TCF string; for users in Korea, your personalized-ads choice; and when you accepted the first-launch notice)</td><td>Stored on your device by Google's User Messaging Platform (UMP) and the App</td></tr><tr><td>Support communications</td><td>Your email address, the content of your message and any attachments</td><td>Provided by you when you contact us</td></tr></tbody></table></div>
+<p>We do not send links you paste, file names, search terms or the content you download to Firebase Analytics or any other analytics service.</p>
+<h3 id="data-processed-only-on-your-device">Data processed only on your device</h3>
+<ul>
+<li><strong>Country check.</strong> The App reads the country of your SIM card and mobile network and your device's time zone <strong>on your device only</strong> to decide whether to show the optional personalized-ads consent and whether to request non-personalized ads (see Section 12.4). This information is not transmitted by us.
+</li>
+<li><strong>Clipboard contents.</strong> The App reads the clipboard <strong>on your device only</strong> to detect a link you copied. Clipboard contents are not transmitted. The last link the App processed is kept in the App's local storage so the same link is not analyzed twice.
+</li>
+<li><strong>Your downloaded media, links, library and vault.</strong> These are stored only on your device.
+</li></ul>
+<h3 id="data-we-do-not-collect">Data we do NOT collect</h3>
+<ul>
+<li><strong>Payment card details.</strong> Payments are handled entirely by Google Play. We never receive your card number or billing address.
+</li>
+<li><strong>Biometric data.</strong> App Lock and the Hidden Vault use Android's built-in device authentication (fingerprint, face or device PIN/pattern). The App only receives a "success" or "failure" result. Your biometric data never leaves your device's secure hardware.
+</li>
+<li><strong>Precise location, contacts, photos you did not save through the App, microphone or camera data.</strong>
+</li></ul>
+<h3 id="connections-to-third-party-platforms">Connections to third-party platforms</h3>
+<ul>
+<li><strong>Downloading.</strong> When you download, the App connects <strong>directly from your device</strong> to the public page of the relevant platform (for example TikTok or Instagram). No intermediate server of ours is involved. That platform may process your IP address and other data under its own privacy policy; we do not receive this data.
+</li>
+<li><strong>Download engine updates.</strong> The App periodically checks GitHub (github.com, operated by GitHub, Inc.) for updates to its open-source download engine (yt-dlp) and downloads them directly. GitHub receives your IP address and basic request data under its own privacy statement. No personal data is sent by us.
+</li></ul>
+<hr>
+<h2 id="4-purposes-and-legal-bases">4. Purposes and legal bases</h2>
+<div class="table-wrap"><table><thead><tr><th>Purpose</th><th>Data used</th><th>Legal basis under GDPR / UK GDPR</th><th>Legal basis under Korean PIPA</th></tr></thead><tbody><tr><td>Provide the App's features (downloading, saving, settings, notifications)</td><td>Device information, FCM token</td><td>Performance of a contract (Art. 6(1)(b))</td><td>Necessary to perform a contract (Art. 15(1)(4))</td></tr><tr><td>Provide VIP, restore purchases, handle refunds</td><td>Purchase information</td><td>Performance of a contract (Art. 6(1)(b))</td><td>Necessary to perform a contract (Art. 15(1)(4))</td></tr><tr><td>Keep transaction records required by law</td><td>Purchase information</td><td>Legal obligation (Art. 6(1)(c))</td><td>Legal obligation (Art. 15(1)(2))</td></tr><tr><td>Detect crashes, fix bugs, keep the App secure, prevent fraud</td><td>Diagnostics, device information, installation IDs</td><td>Legitimate interests (Art. 6(1)(f))</td><td>Legitimate interests (Art. 15(1)(6))</td></tr><tr><td>Adjust App settings remotely (e.g., ad frequency)</td><td>Firebase installation ID, app version, country</td><td>Legitimate interests (Art. 6(1)(f))</td><td>Legitimate interests (Art. 15(1)(6))</td></tr><tr><td>Measure usage and improve the App (analytics)</td><td>App activity, app instance ID</td><td><strong>Consent</strong> (Art. 6(1)(a))</td><td>Legitimate interests (Art. 15(1)(6))</td></tr><tr><td>Show ads that fund the free version (non-personalized)</td><td>Device information, IP address, ad interactions, Advertising ID (for frequency capping, measurement and fraud prevention)</td><td><strong>Consent</strong> for storing/accessing information on your device (ePrivacy Directive Art. 5(3)); otherwise legitimate interests</td><td>Necessary to perform a contract (the free service is funded by ads)</td></tr><tr><td>Show personalized ads</td><td>Advertising ID, app activity</td><td><strong>Consent</strong> (Art. 6(1)(a))</td><td><strong>Separate optional consent</strong> (Art. 15(1)(1)); overseas transfer by separate consent (Art. 28-8(1)(1))</td></tr><tr><td>Respond to your requests</td><td>Support communications</td><td>Legitimate interests (Art. 6(1)(f))</td><td>Consent (Art. 15(1)(1))</td></tr></tbody></table></div>
+<p>Where we rely on <strong>legitimate interests</strong>, our interest is to run a stable, secure and free App. We use only the minimum data necessary, and you may object at any time (Section 10).</p>
+<p>We do not use your data for automated decision-making that produces legal or similarly significant effects on you.</p>
+<hr>
+<h2 id="5-device-permissions">5. Device permissions</h2>
+<div class="table-wrap"><table><thead><tr><th>Permission</th><th>Required?</th><th>Why</th></tr></thead><tbody><tr><td>Internet / network access</td><td>Required</td><td>Download media; receive ads and settings</td></tr><tr><td>Advertising ID (<code>AD_ID</code>)</td><td>Required (use limited by your consent choices)</td><td>Serve and measure ads</td></tr><tr><td>Notifications</td><td>Optional</td><td>Download progress and completion</td></tr><tr><td>Storage (Android 9 and below only)</td><td>Optional</td><td>Save media to your gallery</td></tr><tr><td>Modify system settings</td><td>Optional</td><td>Set a downloaded sound as your ringtone</td></tr><tr><td>Biometric / device credential</td><td>Optional (VIP)</td><td>App Lock and Hidden Vault</td></tr></tbody></table></div>
+<p>You can use the rest of the App if you refuse an optional permission. You can withdraw permissions at any time in <strong>Android Settings &gt; Apps &gt; Keeply &gt; Permissions</strong> (for "Modify system settings": <strong>Android Settings &gt; Apps &gt; Special app access</strong>).</p>
+<hr>
+<h2 id="6-who-receives-your-data">6. Who receives your data</h2>
+<p>We do not sell personal data for money and do not disclose it to anyone other than the recipients below, except where required by law (for example a valid order from a court or law-enforcement authority) or to protect our legal rights.</p>
+<div class="table-wrap"><table><thead><tr><th>Recipient</th><th>Role</th><th>Data</th><th>Purpose</th><th>Location</th><th>Retention</th></tr></thead><tbody><tr><td>Google LLC — Firebase Analytics, Crashlytics, Cloud Messaging, Remote Config</td><td><strong>Processor / service provider</strong> (acts on our instructions)</td><td>Identifiers, device information, app activity, diagnostics</td><td>Analytics, crash reporting, notifications, remote configuration</td><td>United States and other countries where Google operates</td><td>See Section 8</td></tr><tr><td>Google LLC — AdMob</td><td><strong>Independent controller</strong> for ad serving and measurement</td><td>Advertising ID, App set ID, device information, IP address, ad interactions</td><td>Serve, measure and protect ads; personalize ads where permitted</td><td>United States and other countries</td><td>Google's own retention policy</td></tr><tr><td>Google LLC / Google Ireland Ltd. / Google Commerce Ltd. — Google Play</td><td><strong>Independent controller</strong> for payments</td><td>Purchase information</td><td>Process payments, refunds and subscriptions</td><td>United States, Ireland and other countries</td><td>Google's own retention policy</td></tr></tbody></table></div>
+<p>Learn more: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a> · <a href="https://firebase.google.com/support/privacy">Firebase privacy</a> · <a href="https://play.google.com/about/play-terms/">Google Play Terms</a></p>
+<p>If we are involved in a merger, acquisition or sale of assets, personal data may be transferred to the successor, who will be bound by this Policy. We will notify you in advance.</p>
+<hr>
+<h2 id="7-international-transfers">7. International transfers</h2>
+<p>We are based in the Republic of Korea. Google processes data in the United States and other countries. These countries may not offer the same level of protection as your own.</p>
+<ul>
+<li><strong>From the EEA, UK and Switzerland:</strong> Google LLC is certified under the EU-U.S. Data Privacy Framework, the UK Extension and the Swiss-U.S. Data Privacy Framework (GDPR Art. 45), and Google also applies Standard Contractual Clauses (GDPR Art. 46). Transfers to the Republic of Korea are covered by the European Commission's adequacy decision of 17 December 2021.
+</li>
+<li><strong>From the Republic of Korea:</strong> see Section 12.4 for the details required by PIPA Article 28-8.
+</li>
+<li><strong>Timing and method:</strong> data is transferred automatically while you use the App, over encrypted connections (HTTPS/TLS).
+</li>
+<li><strong>How to refuse:</strong> you can withdraw consent for analytics and personalized ads in Settings &gt; Privacy choices (where shown) or Settings &gt; Personalized ads (Korea), and delete your Advertising ID in Android settings. Transfers needed for core features (crash reporting, notifications, settings) stop only if you stop using and uninstall the App.
+</li></ul>
+<hr>
+<h2 id="8-retention">8. Retention</h2>
+<div class="table-wrap"><table><thead><tr><th>Data</th><th>Retention</th></tr></thead><tbody><tr><td>Analytics data (Firebase Analytics)</td><td>2 months from collection</td></tr><tr><td>Crash reports (Crashlytics)</td><td>90 days</td></tr><tr><td>FCM token, Firebase installation ID</td><td>Until you uninstall the App or the token expires (270 days of inactivity)</td></tr><tr><td>Advertising data (AdMob)</td><td>Under Google's retention policy (generally up to about 2 years)</td></tr><tr><td>Consent records</td><td>On your device until you uninstall the App or change your choice</td></tr><tr><td>Records of contracts, withdrawals and payments</td><td>5 years (Korean Act on Consumer Protection in Electronic Commerce, Art. 6, and its Enforcement Decree Art. 6) or longer where another law requires</td></tr><tr><td>Records of consumer complaints and disputes</td><td>3 years (same Act)</td></tr><tr><td>Support emails</td><td>1 year after your request is resolved</td></tr></tbody></table></div>
+<p>Data stored on your device (downloads, library, vault, settings) is deleted when you clear the App's data or uninstall it. <strong>Files you saved to your gallery remain</strong> after uninstalling.</p>
+<p>When a retention period ends, we delete electronic data in a way that cannot be restored and shred paper records. Data kept to meet a legal obligation is stored separately from other data and used only for that obligation.</p>
+<hr>
+<h2 id="9-security">9. Security</h2>
+<ul>
+<li>Data in transit is encrypted (HTTPS/TLS).
+</li>
+<li>Access to Google Firebase, AdMob and Play Console is limited to {{OPERATOR_NAME}} and protected with two-step verification.
+</li>
+<li>We collect only the data we need and do not store personal data on our own servers.
+</li>
+<li><strong>Note:</strong> App Lock and the Hidden Vault prevent access through the App's screens. <strong>They do not encrypt your files.</strong> Please also use your device's screen lock.
+</li></ul>
+<p>No method of transmission or storage is 100% secure. If a personal data breach occurs, we will notify you and the competent authorities as required by law.</p>
+<hr>
+<h2 id="10-your-rights">10. Your rights</h2>
+<p>Depending on where you live, you have some or all of these rights:</p>
+<ul>
+<li><strong>Access</strong> your personal data and receive a copy
+</li>
+<li><strong>Correct</strong> inaccurate data
+</li>
+<li><strong>Delete</strong> your data
+</li>
+<li><strong>Restrict</strong> or <strong>suspend</strong> processing
+</li>
+<li><strong>Object</strong> to processing based on legitimate interests or used for direct marketing
+</li>
+<li><strong>Data portability</strong> — receive your data in a machine-readable format
+</li>
+<li><strong>Withdraw consent</strong> at any time, without affecting processing before withdrawal
+</li>
+<li><strong>Opt out</strong> of the "sale" or "sharing" of personal data and of targeted advertising (US)
+</li>
+<li><strong>Complain</strong> to a data protection authority (Section 12)
+</li></ul>
+<h3 id="how-to-exercise-your-rights">How to exercise your rights</h3>
+<ul>
+<li><strong>Instantly in the App or device:</strong> change your choices in Settings &gt; Privacy choices (where shown) or Settings &gt; Personalized ads (Korea); reset or delete your Advertising ID in Android settings; clear the App's data or uninstall it.
+</li>
+<li><strong>By email:</strong> write to {{CONTACT_EMAIL}}. We respond <strong>free of charge</strong> within <strong>10 days</strong> (Republic of Korea), <strong>1 month</strong> (EEA/UK, extendable by 2 months for complex requests with notice), <strong>45 days</strong> (US states, extendable once by 45 days), <strong>15 days</strong> (Brazil), or the period your local law requires.
+</li></ul>
+<h3 id="identifying-you">Identifying you</h3>
+<p>Because the App has no accounts, we cannot find your data by name or email. Please include <strong>the Support ID shown at the bottom of the App's Settings screen (long-press to copy)</strong> and/or your <strong>Google Play order ID</strong> (starts with "GPA.") so we can locate the data linked to your installation. The Support ID is shown only while analytics is enabled; if it is not shown, no analytics data is linked to your installation. If we cannot identify you, we will tell you (GDPR Art. 11).</p>
+<p>You may use an authorized agent; we may ask for proof of authorization. Legal guardians may exercise rights on behalf of children. We will not discriminate against you for exercising your rights. Purchase records that we must keep by law cannot be deleted until the retention period ends; we will tell you if this applies.</p>
+<hr>
+<h2 id="11-children">11. Children</h2>
+<p>The App is not directed to children. You must be at least <strong>14 years old</strong>, or older if the law of your country requires a higher age to consent to data processing (for example up to 16 in some EEA countries).</p>
+<p>We do not knowingly collect personal data from children under 14 (or under the applicable age in your country). If you believe a child has provided us data, contact {{CONTACT_EMAIL}} and we will delete it promptly. We do not show personalized ads to users we know are under the applicable age.</p>
+<hr>
+<h2 id="12-additional-information-for-specific-regions">12. Additional information for specific regions</h2>
+<h3 id="121-european-economic-area-united-kingdom-and-switzerland">12.1 European Economic Area, United Kingdom and Switzerland</h3>
+<ul>
+<li><strong>Consent:</strong> on first launch, the App shows Google's consent form (IAB TCF certified). Until you choose, consent-based processing (analytics, ad storage, personalized ads) does not take place; Firebase Analytics stays switched off. You can change your choice at any time in <strong>Settings &gt; Privacy choices</strong>.
+</li>
+<li><strong>EU/UK representative:</strong> we have not appointed a representative under GDPR Art. 27. You can contact us directly at {{CONTACT_EMAIL}}.
+</li>
+<li><strong>Complaints:</strong> you may complain to the supervisory authority where you live or work, or where an infringement occurred. <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">List of EEA authorities</a> · UK: <a href="https://ico.org.uk">Information Commissioner's Office</a> · Switzerland: <a href="https://www.edoeb.admin.ch">FDPIC</a>.
+</li></ul>
+<h3 id="122-united-states-california-and-other-states-with-consumer-privacy-laws">12.2 United States (California and other states with consumer privacy laws)</h3>
+<p>This section applies to residents of California (CCPA/CPRA), Virginia, Colorado, Connecticut, Utah, Texas, Oregon and other states with similar laws.</p>
+<ul>
+<li><strong>Categories collected in the last 12 months:</strong> identifiers (advertising ID, installation IDs, IP address); internet or other electronic network activity (app activity, ad interactions); approximate geolocation derived from IP address; commercial information (purchase records). Sources, purposes and recipients are described in Sections 3, 4 and 6.
+</li>
+<li><strong>Sensitive personal information:</strong> we do not collect it.
+</li>
+<li><strong>Sale or sharing:</strong> we do not sell personal data for money. Allowing AdMob to show <strong>personalized ads</strong> may count as "selling" or "sharing" for cross-context behavioral advertising. <strong>To opt out</strong>, use <strong>Settings &gt; Privacy choices</strong> (shown to users in US states with privacy laws, where you can opt out of the sale or sharing of personal data), or delete/reset your Advertising ID in Android settings (Android Settings &gt; Google &gt; Ads), or email us at {{CONTACT_EMAIL}}.
+</li>
+<li><strong>Under 16:</strong> we do not knowingly sell or share personal data of consumers under 16.
+</li>
+<li><strong>Appeals:</strong> if we decline your request, you may appeal by replying to our decision at {{CONTACT_EMAIL}}. If the appeal is denied, you may contact your state Attorney General.
+</li></ul>
+<h3 id="123-brazil-lgpd">12.3 Brazil (LGPD)</h3>
+<p>You have the rights listed in Art. 18 of the LGPD: confirmation of processing, access, correction, anonymization, blocking or deletion, portability, information about sharing, information about the possibility of refusing consent, and revocation of consent. You may file a complaint with the <a href="https://www.gov.br/anpd">ANPD</a>.</p>
+<h3 id="124-republic-of-korea-pipa">12.4 Republic of Korea (PIPA)</h3>
+<p>This section sets out items required by PIPA Article 30 and its Enforcement Decree Article 31. A Korean translation of this Policy is available; see Section 14.</p>
+<p><strong>(a) Overseas transfer of personal information (PIPA Art. 28-8)</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Item</th><th>Details</th></tr></thead><tbody><tr><td>Recipient and contact</td><td>Google LLC (privacy@google.com; <a href="https://support.google.com/policies/troubleshooter/7575787">Google privacy help</a>)</td></tr><tr><td>Country</td><td>United States and other countries where Google operates data centers</td></tr><tr><td>Items transferred</td><td>Section 3: identifiers, device information, network data, app activity, diagnostics, purchase information</td></tr><tr><td>Purpose</td><td>Section 6</td></tr><tr><td>Timing and method</td><td>Transmitted over the network (HTTPS) while the App is used</td></tr><tr><td>Retention</td><td>Section 8</td></tr><tr><td>Legal basis</td><td>Firebase and Google Play: processing entrustment and storage necessary to perform the contract with you, disclosed in this Policy (Art. 28-8(1)(3)(a)). AdMob personalized ads: your separate consent (Art. 28-8(1)(1)), given only if you tick the optional box. Without that consent, only pseudonymous online identifiers (Advertising ID, App set ID) and device data are passed for non-personalized ads; they are not combined with any information that identifies you</td></tr><tr><td>How to refuse and effect</td><td>Leave the optional box unticked or turn off <strong>Settings &gt; Personalized ads</strong> (you will see non-personalized ads and can use every feature); delete your Advertising ID (Android Settings &gt; Google &gt; Ads); or stop using and uninstall the App. Refusing transfers needed for core features means you cannot use the App.</td></tr></tbody></table></div>
+<p><strong>(b) Behavioral information and personalized ads.</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Item</th><th>Details</th></tr></thead><tbody><tr><td>Behavioral information collected</td><td>Advertising ID, ad impressions and clicks in the App, app usage information, device and network information</td></tr><tr><td>How it is collected</td><td>Automatically by the Google AdMob SDK while you use the App</td></tr><tr><td>Purpose</td><td>Showing interest-based (personalized) ads</td></tr><tr><td>Recipient</td><td>Google LLC (United States) — collects and processes the information directly</td></tr><tr><td>Retention</td><td>Under Google's retention policy (generally up to about 2 years) or until you withdraw consent</td></tr><tr><td>Your choice</td><td>Personalized ads are shown <strong>only if you tick the optional consent</strong> on the first-launch screen. The box is unticked by default, and refusing does not limit any feature; you will see non-personalized ads instead. Withdraw at any time in <strong>Settings &gt; Personalized ads</strong>, or delete your Advertising ID in Android Settings &gt; Google &gt; Ads.</td></tr></tbody></table></div>
+<p>Without your consent, AdMob still uses your Advertising ID, device information and ad interactions to deliver non-personalized ads, limit how often the same ad is shown, measure ad performance and prevent fraud, but does not use them for interest-based ads in this App. We do not show personalized ads to users we know are under 14.</p>
+<p><strong>(c) Automatic collection devices.</strong> The App does not use web cookies. SDK identifiers and the Advertising ID that work like cookies, and how to refuse them, are described in our <a href="./cookie-policy.html">Cookie and Tracking Technologies Policy</a>.</p>
+<p><strong>(d) Destruction.</strong> Described in Section 8.</p>
+<p><strong>(e) Privacy officer.</strong> {{OPERATOR_NAME}} (operator) · {{CONTACT_EMAIL}}</p>
+<p><strong>(f) Remedies.</strong> You may contact:</p>
+<div class="table-wrap"><table><thead><tr><th>Agency</th><th>Contact</th></tr></thead><tbody><tr><td>Personal Information Infringement Report Center (KISA)</td><td>118 · <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></td></tr><tr><td>Personal Information Dispute Mediation Committee</td><td>1833-6972 · <a href="https://www.kopico.go.kr">kopico.go.kr</a></td></tr><tr><td>Supreme Prosecutors' Office Cybercrime Investigation</td><td>1301 · <a href="https://www.spo.go.kr">spo.go.kr</a></td></tr><tr><td>Korean National Police Agency Cyber Bureau</td><td>182 · <a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a></td></tr></tbody></table></div>
+<p>If this Policy conflicts with a contract between you and us, the terms more favorable to you apply (PIPA Art. 30(3)).</p>
+<h3 id="125-other-regions">12.5 Other regions</h3>
+<p>If you live in another country (for example Canada, Japan, Australia, India, Türkiye or South Africa), you have the rights your local law provides. Contact {{CONTACT_EMAIL}} and we will handle your request under that law.</p>
+<hr>
+<h2 id="13-changes-to-this-policy">13. Changes to this Policy</h2>
+<p>We will post changes on this page and in the App <strong>at least 7 days</strong> before they take effect. For material changes (for example new data categories or new recipients), we will give <strong>at least 30 days'</strong> notice and ask for your consent again where required. Previous versions are listed below.</p>
+<div class="table-wrap"><table><thead><tr><th>Version</th><th>Effective date</th><th>Summary</th></tr></thead><tbody><tr><td>1.0</td><td>{{EFFECTIVE_DATE}}</td><td>First version</td></tr></tbody></table></div>
+<hr>
+<h2 id="14-contact-and-other-languages">14. Contact and other languages</h2>
+<p>{{OPERATOR_NAME}} · {{OPERATOR_ADDRESS}} · {{CONTACT_EMAIL}}</p>
+<p>Korean version: <a href="./ko/privacy-policy.html">개인정보처리방침</a>. If the versions differ, the version more favorable to you applies.</p>
+<p>Related documents: <a href="./terms-of-use.html">Terms of Use</a> · <a href="./cookie-policy.html">Cookie and Tracking Technologies Policy</a></p>
+</main>
+<footer><a href="terms-of-use.html">Terms of Use</a> <a href="cookie-policy.html">Cookie and Tracking Technologies Policy</a></footer>
+</body>
+</html>
