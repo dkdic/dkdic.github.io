@@ -23,17 +23,16 @@ th{background:var(--th)}
 code{font-size:.9em;background:var(--th);padding:1px 4px;border-radius:4px}
 ul,ol{padding-left:1.4em}
 li{margin:.25em 0}
-/* 상단 언어 전환: 앱 WebView 에서 손가락으로 누르기 쉬운 크기 */
-.lang-switch{display:flex;justify-content:flex-end;gap:6px;margin:0 0 8px}
+/* 맨 아래(푸터 링크 밑) 언어 전환: 앱 WebView 에서 손가락으로 누르기 쉬운 크기 */
+.lang-switch{display:flex;gap:6px;margin:16px 0 0}
 .lang-switch a,.lang-switch span{display:inline-block;min-height:36px;padding:7px 14px;border:1px solid var(--line);border-radius:18px;font-size:.9rem;line-height:1.4;text-decoration:none}
 .lang-switch span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
 footer{max-width:860px;margin:0 auto;padding:16px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-footer a{margin-right:14px}
+footer>a{margin-right:14px}
 </style>
 </head>
 <body>
 <main>
-<nav class="lang-switch" aria-label="Language"><span aria-current="page">English</span><a href="ko/privacy-policy.html" hreflang="ko" lang="ko">한국어</a></nav>
 <h1 id="kanga-privacy-policy">Kanga Privacy Policy</h1>
 <p><strong>Effective date:</strong> {{EFFECTIVE_DATE}}<br><strong>Last updated:</strong> {{EFFECTIVE_DATE}}</p>
 <p>This Privacy Policy explains how {{OPERATOR_NAME}} ("<strong>we</strong>", "<strong>us</strong>") processes personal data when you use the Kanga mobile application for Android (the "<strong>App</strong>"). It applies worldwide. Section 12 adds the information that specific laws require for users in certain regions (EEA/UK/Switzerland, the United States, Brazil, the Republic of Korea and others).</p>
@@ -213,6 +212,8 @@ footer a{margin-right:14px}
 <p>Korean version: <a href="./ko/privacy-policy.html">개인정보처리방침</a>. If the versions differ, the version more favorable to you applies.</p>
 <p>Related documents: <a href="./terms-of-use.html">Terms of Use</a> · <a href="./cookie-policy.html">Cookie and Tracking Technologies Policy</a></p>
 </main>
-<footer><a href="terms-of-use.html">Terms of Use</a> <a href="cookie-policy.html">Cookie and Tracking Technologies Policy</a></footer>
+<footer><a href="terms-of-use.html">Terms of Use</a> <a href="cookie-policy.html">Cookie and Tracking Technologies Policy</a>
+<nav class="lang-switch" aria-label="Language"><span aria-current="page">English</span><a href="ko/privacy-policy.html" hreflang="ko" lang="ko">한국어</a></nav>
+</footer>
 </body>
 </html>

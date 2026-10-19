@@ -23,17 +23,16 @@ th{background:var(--th)}
 code{font-size:.9em;background:var(--th);padding:1px 4px;border-radius:4px}
 ul,ol{padding-left:1.4em}
 li{margin:.25em 0}
-/* 상단 언어 전환: 앱 WebView 에서 손가락으로 누르기 쉬운 크기 */
-.lang-switch{display:flex;justify-content:flex-end;gap:6px;margin:0 0 8px}
+/* 맨 아래(푸터 링크 밑) 언어 전환: 앱 WebView 에서 손가락으로 누르기 쉬운 크기 */
+.lang-switch{display:flex;gap:6px;margin:16px 0 0}
 .lang-switch a,.lang-switch span{display:inline-block;min-height:36px;padding:7px 14px;border:1px solid var(--line);border-radius:18px;font-size:.9rem;line-height:1.4;text-decoration:none}
 .lang-switch span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
 footer{max-width:860px;margin:0 auto;padding:16px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-footer a{margin-right:14px}
+footer>a{margin-right:14px}
 </style>
 </head>
 <body>
 <main>
-<nav class="lang-switch" aria-label="Language"><a href="../cookie-policy.html" hreflang="en" lang="en">English</a><span aria-current="page">한국어</span></nav>
 <h1 id="kanga-쿠키-및-추적-기술-정책">Kanga 쿠키 및 추적 기술 정책</h1>
 <p><strong>시행일:</strong> {{EFFECTIVE_DATE}}<br><strong>최종 수정일:</strong> {{EFFECTIVE_DATE}}</p>
 <p>Kanga 앱(이하 "<strong>앱</strong>")은 웹 브라우저 쿠키를 사용하지 않습니다. 대신 <strong>비슷한 기술</strong>, 즉 소프트웨어 개발 키트(SDK)가 만드는 식별자, Android 광고 ID, 앱 자체 저장소를 사용합니다. 이 정책은 그 기술이 무엇이고 왜 쓰며 어떻게 관리할 수 있는지 설명합니다. 이 정책은 <a href="../ko/privacy-policy.html">개인정보처리방침</a>의 일부입니다.</p>
@@ -87,6 +86,8 @@ footer a{margin-right:14px}
 <p>영문본: <a href="../cookie-policy.html">Cookie and Tracking Technologies Policy</a></p>
 <div class="table-wrap"><table><thead><tr><th>버전</th><th>시행일</th><th>내용</th></tr></thead><tbody><tr><td>1.0</td><td>{{EFFECTIVE_DATE}}</td><td>최초 제정</td></tr></tbody></table></div>
 </main>
-<footer><a href="privacy-policy.html">개인정보처리방침</a> <a href="terms-of-use.html">이용약관</a></footer>
+<footer><a href="privacy-policy.html">개인정보처리방침</a> <a href="terms-of-use.html">이용약관</a>
+<nav class="lang-switch" aria-label="Language"><a href="../cookie-policy.html" hreflang="en" lang="en">English</a><span aria-current="page">한국어</span></nav>
+</footer>
 </body>
 </html>
