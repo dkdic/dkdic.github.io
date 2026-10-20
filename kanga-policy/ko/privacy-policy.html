@@ -47,9 +47,11 @@ footer>a{margin-right:14px}
 </li>
 <li><strong>Google 서비스를 사용합니다.</strong> 광고(Google AdMob), 분석·오류 보고·알림·원격 설정(Google Firebase), 결제(Google Play 결제)를 사용하며, 이 서비스들이 아래와 같이 기기 식별자와 이용 기록을 처리합니다.
 </li>
+<li><strong>광고 성과를 측정합니다.</strong> 운영자는 TikTok, Meta(Facebook·Instagram), Google Ads에 앱 광고를 합니다. 이용자의 동의 선택이 허용하는 경우 <strong>AppsFlyer</strong>로 어떤 광고를 보고 앱을 설치하거나 구독했는지 측정하고, 그 결과를 해당 광고 플랫폼에 전달해 광고 성과를 측정·개선합니다(3조·4조·6조).
+</li>
 <li><strong>동의를 선택할 수 있습니다.</strong> 법령상 동의가 필요한 지역(EEA·영국·스위스 등)에서는 분석·광고 식별자를 사용하기 전에 동의를 받습니다. 앱의 <strong>설정 &gt; 개인정보 선택</strong>(EEA·영국·스위스, 개인정보 보호법이 있는 미국 각 주 등 해당 지역에서 표시)에서 언제든지 바꿀 수 있습니다.
 </li>
-<li><strong>한국에서는 동의한 경우에만 맞춤형 광고를 보여 줍니다.</strong> 첫 실행 화면에서 [선택] 항목에 별도로 동의한 경우에만 맞춤형 광고를, 그렇지 않으면 비맞춤형 광고만 요청합니다. <strong>설정 &gt; 맞춤형 광고</strong>에서 언제든지 바꿀 수 있습니다.
+<li><strong>한국에서는 동의한 경우에만 맞춤형 광고와 광고 성과 측정을 합니다.</strong> 첫 실행 화면에서 [선택] 항목에 별도로 동의한 경우에만 맞춤형 광고를 보여 주고 광고 성과 측정용 정보(AppsFlyer, TikTok, Meta, Google Ads)를 보냅니다. 동의하지 않으면 비맞춤형 광고만 요청하며 광고 성과 측정용 정보는 보내지 않습니다. <strong>설정 &gt; 맞춤형 광고</strong>에서 언제든지 바꿀 수 있습니다.
 </li>
 <li><strong>개인정보를 돈을 받고 팔지 않습니다.</strong> 미국 일부 주 법률은 맞춤형 광고를 "판매·공유"로 보기도 합니다. 거부 방법은 12.2를 참고하세요.
 </li></ul>
@@ -60,8 +62,8 @@ footer>a{margin-right:14px}
 <p>이 방침에 관한 문의는 한국어 또는 영어로 이메일을 보내 주세요.</p>
 <hr>
 <h2 id="3-처리하는-개인정보-항목">3. 처리하는 개인정보 항목</h2>
-<div class="table-wrap"><table><thead><tr><th>구분</th><th>항목</th><th>수집 방법</th></tr></thead><tbody><tr><td>기기·온라인 식별자</td><td>광고 ID(Google 광고 ID), 앱 세트 ID, Firebase 설치 ID, 앱 인스턴스 ID, Firebase 클라우드 메시징(FCM) 등록 토큰, Crashlytics 설치 UUID</td><td>앱 실행 시 SDK가 자동 생성·수집</td></tr><tr><td>기기 정보</td><td>기기 모델, OS 버전, 언어·지역 설정, 앱 버전, 네트워크 종류, 통신사</td><td>자동 수집</td></tr><tr><td>네트워크 정보</td><td>IP 주소(국가·지역 추정용이며 정밀 위치가 아님), 접속 시각</td><td>자동 수집</td></tr><tr><td>앱 이용 기록</td><td>자동 수집 이벤트(첫 실행, 앱 업데이트, 세션 시작, 화면 조회 등), 광고 노출·클릭</td><td>자동 수집</td></tr><tr><td>오류 정보</td><td>비정상 종료 기록, 스택 트레이스, 발생 시각, 기기 상태(메모리·저장공간)</td><td>앱 비정상 종료 시 자동 수집</td></tr><tr><td>구매 정보(VIP 이용자)</td><td>Google Play 주문 번호, 구매 토큰, 상품·요금제, 구매·갱신·해지 일자, 구독 상태</td><td>Google Play 결제를 통해 수집</td></tr><tr><td>동의 기록</td><td>동의 선택 내용과 시각(예: IAB TCF 문자열, 한국 이용자의 맞춤형 광고 선택, 첫 실행 이용 안내 동의 시각)</td><td>Google UMP와 앱이 기기에 저장</td></tr><tr><td>문의 내용</td><td>이메일 주소, 문의 내용, 첨부 파일</td><td>이용자가 문의할 때 직접 제공</td></tr></tbody></table></div>
-<p>붙여 넣은 링크, 파일명, 검색어, 받은 콘텐츠는 Firebase Analytics 등 어떤 분석 서비스에도 보내지 않습니다.</p>
+<div class="table-wrap"><table><thead><tr><th>구분</th><th>항목</th><th>수집 방법</th></tr></thead><tbody><tr><td>기기·온라인 식별자</td><td>광고 ID(Google 광고 ID), 앱 세트 ID, Firebase 설치 ID, 앱 인스턴스 ID, Firebase 클라우드 메시징(FCM) 등록 토큰, Crashlytics 설치 UUID, AppsFlyer ID</td><td>앱 실행 시 SDK가 자동 생성·수집</td></tr><tr><td>기기 정보</td><td>기기 모델, OS 버전, 언어·지역 설정, 앱 버전, 네트워크 종류, 통신사</td><td>자동 수집</td></tr><tr><td>네트워크 정보</td><td>IP 주소(국가·지역 추정용이며 정밀 위치가 아님), 접속 시각</td><td>자동 수집</td></tr><tr><td>앱 이용 기록</td><td>자동 수집 이벤트(첫 실행, 앱 업데이트, 세션 시작, 화면 조회 등), 광고 노출·클릭</td><td>자동 수집</td></tr><tr><td>오류 정보</td><td>비정상 종료 기록, 스택 트레이스, 발생 시각, 기기 상태(메모리·저장공간)</td><td>앱 비정상 종료 시 자동 수집</td></tr><tr><td>광고 성과 측정 정보</td><td>설치 경로(어떤 광고·링크로 설치했는지, Google Play 제공), 설치·첫 실행 시각, 운영자가 정한 앱 내 이벤트: 첫 다운로드 완료, VIP 구독 시작·갱신(금액·통화 포함)</td><td>동의 선택이 허용하는 경우에만 AppsFlyer SDK가 자동 수집(12조)</td></tr><tr><td>구매 정보(VIP 이용자)</td><td>Google Play 주문 번호, 구매 토큰, 상품·요금제, 구매·갱신·해지 일자, 구독 상태</td><td>Google Play 결제를 통해 수집</td></tr><tr><td>동의 기록</td><td>동의 선택 내용과 시각(예: IAB TCF 문자열, 한국 이용자의 맞춤형 광고·광고 성과 측정 선택, 첫 실행 이용 안내 동의 시각)</td><td>Google UMP와 앱이 기기에 저장</td></tr><tr><td>문의 내용</td><td>이메일 주소, 문의 내용, 첨부 파일</td><td>이용자가 문의할 때 직접 제공</td></tr></tbody></table></div>
+<p>붙여 넣은 링크, 파일명, 검색어, 받은 콘텐츠는 Firebase Analytics, AppsFlyer, 광고 플랫폼 등 어떤 분석·광고 서비스에도 보내지 않습니다.</p>
 <h3 id="기기-안에서만-처리하는-정보">기기 안에서만 처리하는 정보</h3>
 <ul>
 <li><strong>국가 확인:</strong> 맞춤형 광고 [선택] 동의 표시 여부와 비맞춤형 광고 요청 여부(12.4 참고)를 정하기 위해 SIM·통신망 국가와 기기 시간대를 <strong>기기 안에서만</strong> 확인합니다. 운영자는 이 정보를 전송하지 않습니다.
@@ -86,7 +88,7 @@ footer>a{margin-right:14px}
 </li></ul>
 <hr>
 <h2 id="4-처리-목적과-법적-근거">4. 처리 목적과 법적 근거</h2>
-<div class="table-wrap"><table><thead><tr><th>목적</th><th>이용 항목</th><th>GDPR·UK GDPR 근거</th><th>개인정보 보호법 근거</th></tr></thead><tbody><tr><td>앱 기능 제공(다운로드, 저장, 설정, 알림)</td><td>기기 정보, FCM 토큰</td><td>계약 이행(제6조 제1항 b)</td><td>계약 이행에 필요(제15조 제1항 제4호)</td></tr><tr><td>VIP 제공, 구매 복원, 환불 처리</td><td>구매 정보</td><td>계약 이행(제6조 제1항 b)</td><td>계약 이행에 필요(제15조 제1항 제4호)</td></tr><tr><td>법령에 따른 거래 기록 보관</td><td>구매 정보</td><td>법적 의무(제6조 제1항 c)</td><td>법령상 의무 준수(제15조 제1항 제2호)</td></tr><tr><td>오류 탐지·수정, 보안 유지, 부정 이용 방지</td><td>오류 정보, 기기 정보, 설치 ID</td><td>정당한 이익(제6조 제1항 f)</td><td>정당한 이익(제15조 제1항 제6호)</td></tr><tr><td>원격 설정 조정(광고 빈도 등)</td><td>Firebase 설치 ID, 앱 버전, 국가</td><td>정당한 이익(제6조 제1항 f)</td><td>정당한 이익(제15조 제1항 제6호)</td></tr><tr><td>이용 통계 측정·앱 개선(분석)</td><td>앱 이용 기록, 앱 인스턴스 ID</td><td><strong>동의</strong>(제6조 제1항 a)</td><td>정당한 이익(제15조 제1항 제6호)</td></tr><tr><td>무료 버전 운영을 위한 광고(비맞춤형)</td><td>기기 정보, IP 주소, 광고 반응, 광고 ID(노출 빈도 제한·성과 측정·부정 방지용)</td><td>기기 정보 저장·접근에 대한 <strong>동의</strong>(ePrivacy 지침 제5조 제3항), 그 밖에는 정당한 이익</td><td>계약 이행에 필요(무료 서비스가 광고로 운영됨)</td></tr><tr><td>맞춤형 광고</td><td>광고 ID, 앱 이용 기록</td><td><strong>동의</strong>(제6조 제1항 a)</td><td><strong>별도 [선택] 동의</strong>(제15조 제1항 제1호), 국외 이전은 별도 동의(제28조의8 제1항 제1호)</td></tr><tr><td>문의 응대</td><td>문의 내용</td><td>정당한 이익(제6조 제1항 f)</td><td>동의(제15조 제1항 제1호)</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>목적</th><th>이용 항목</th><th>GDPR·UK GDPR 근거</th><th>개인정보 보호법 근거</th></tr></thead><tbody><tr><td>앱 기능 제공(다운로드, 저장, 설정, 알림)</td><td>기기 정보, FCM 토큰</td><td>계약 이행(제6조 제1항 b)</td><td>계약 이행에 필요(제15조 제1항 제4호)</td></tr><tr><td>VIP 제공, 구매 복원, 환불 처리</td><td>구매 정보</td><td>계약 이행(제6조 제1항 b)</td><td>계약 이행에 필요(제15조 제1항 제4호)</td></tr><tr><td>법령에 따른 거래 기록 보관</td><td>구매 정보</td><td>법적 의무(제6조 제1항 c)</td><td>법령상 의무 준수(제15조 제1항 제2호)</td></tr><tr><td>오류 탐지·수정, 보안 유지, 부정 이용 방지</td><td>오류 정보, 기기 정보, 설치 ID</td><td>정당한 이익(제6조 제1항 f)</td><td>정당한 이익(제15조 제1항 제6호)</td></tr><tr><td>원격 설정 조정(광고 빈도 등)</td><td>Firebase 설치 ID, 앱 버전, 국가</td><td>정당한 이익(제6조 제1항 f)</td><td>정당한 이익(제15조 제1항 제6호)</td></tr><tr><td>이용 통계 측정·앱 개선(분석)</td><td>앱 이용 기록, 앱 인스턴스 ID</td><td><strong>동의</strong>(제6조 제1항 a)</td><td>정당한 이익(제15조 제1항 제6호)</td></tr><tr><td>무료 버전 운영을 위한 광고(비맞춤형)</td><td>기기 정보, IP 주소, 광고 반응, 광고 ID(노출 빈도 제한·성과 측정·부정 방지용)</td><td>기기 정보 저장·접근에 대한 <strong>동의</strong>(ePrivacy 지침 제5조 제3항), 그 밖에는 정당한 이익</td><td>계약 이행에 필요(무료 서비스가 광고로 운영됨)</td></tr><tr><td>맞춤형 광고</td><td>광고 ID, 앱 이용 기록</td><td><strong>동의</strong>(제6조 제1항 a)</td><td><strong>별도 [선택] 동의</strong>(제15조 제1항 제1호), 국외 이전은 별도 동의(제28조의8 제1항 제1호)</td></tr><tr><td>TikTok·Meta·Google Ads 광고 성과 측정·개선(어떤 광고로 설치·구독했는지)</td><td>광고 ID, AppsFlyer ID, 설치 경로, IP 주소, 기기 정보, 광고 성과 측정 이벤트</td><td><strong>동의</strong>(제6조 제1항 a)</td><td><strong>별도 [선택] 동의</strong>(제15조 제1항 제1호, 제17조 제1항 제1호), 국외 이전은 별도 동의(제28조의8 제1항 제1호)</td></tr><tr><td>문의 응대</td><td>문의 내용</td><td>정당한 이익(제6조 제1항 f)</td><td>동의(제15조 제1항 제1호)</td></tr></tbody></table></div>
 <p>정당한 이익을 근거로 할 때 운영자의 이익은 안정적이고 안전한 무료 앱 운영입니다. 필요한 최소한의 정보만 이용하며, 이용자는 언제든지 처리에 반대할 수 있습니다(10조).</p>
 <p>법적 효과나 그에 준하는 중대한 영향을 주는 자동화된 결정은 하지 않습니다.</p>
 <hr>
@@ -96,24 +98,25 @@ footer>a{margin-right:14px}
 <hr>
 <h2 id="6-개인정보를-받는-자처리위탁제3자-제공">6. 개인정보를 받는 자(처리위탁·제3자 제공)</h2>
 <p>운영자는 개인정보를 돈을 받고 팔지 않으며, 법령에 따른 경우(법원·수사기관의 적법한 요청 등)나 운영자의 법적 권리를 보호하는 경우를 제외하고 아래 외의 자에게 제공하지 않습니다.</p>
-<div class="table-wrap"><table><thead><tr><th>받는 자</th><th>역할</th><th>항목</th><th>목적</th><th>위치</th><th>보유 기간</th></tr></thead><tbody><tr><td>Google LLC — Firebase Analytics, Crashlytics, Cloud Messaging, Remote Config</td><td><strong>수탁자</strong>(운영자의 지시에 따라 처리)</td><td>식별자, 기기 정보, 앱 이용 기록, 오류 정보</td><td>분석, 오류 보고, 알림, 원격 설정</td><td>미국 및 Google 운영 국가</td><td>8조 참고</td></tr><tr><td>Google LLC — AdMob</td><td>광고 제공·측정에 대한 <strong>독립적 처리자</strong></td><td>광고 ID, 앱 세트 ID, 기기 정보, IP 주소, 광고 반응</td><td>광고 제공·측정·보호, 허용된 경우 맞춤형 광고</td><td>미국 및 Google 운영 국가</td><td>Google 보관 정책</td></tr><tr><td>Google LLC / Google Ireland Ltd. / Google Commerce Ltd. — Google Play</td><td>결제에 대한 <strong>독립적 처리자</strong></td><td>구매 정보</td><td>결제·환불·구독 처리</td><td>미국, 아일랜드 등</td><td>Google 보관 정책</td></tr></tbody></table></div>
-<p>자세히 보기: <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google 서비스를 사용하는 앱의 정보 사용 방식</a> · <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a> · <a href="https://play.google.com/about/play-terms/">Google Play 서비스 약관</a></p>
+<div class="table-wrap"><table><thead><tr><th>받는 자</th><th>역할</th><th>항목</th><th>목적</th><th>위치</th><th>보유 기간</th></tr></thead><tbody><tr><td>Google LLC — Firebase Analytics, Crashlytics, Cloud Messaging, Remote Config</td><td><strong>수탁자</strong>(운영자의 지시에 따라 처리)</td><td>식별자, 기기 정보, 앱 이용 기록, 오류 정보</td><td>분석, 오류 보고, 알림, 원격 설정</td><td>미국 및 Google 운영 국가</td><td>8조 참고</td></tr><tr><td>Google LLC — AdMob</td><td>광고 제공·측정에 대한 <strong>독립적 처리자</strong></td><td>광고 ID, 앱 세트 ID, 기기 정보, IP 주소, 광고 반응</td><td>광고 제공·측정·보호, 허용된 경우 맞춤형 광고</td><td>미국 및 Google 운영 국가</td><td>Google 보관 정책</td></tr><tr><td>Google LLC / Google Ireland Ltd. / Google Commerce Ltd. — Google Play</td><td>결제에 대한 <strong>독립적 처리자</strong></td><td>구매 정보</td><td>결제·환불·구독 처리</td><td>미국, 아일랜드 등</td><td>Google 보관 정책</td></tr><tr><td>AppsFlyer Ltd.</td><td><strong>수탁자</strong>(운영자의 지시에 따라 처리)</td><td>광고 ID, AppsFlyer ID, 설치 경로, IP 주소, 기기 정보, 광고 성과 측정 이벤트</td><td>설치·앱 내 이벤트가 어떤 광고에서 왔는지 측정하고 결과를 아래 광고 플랫폼에 전달</td><td>이스라엘, 유럽연합, 미국</td><td>8조 참고</td></tr><tr><td>TikTok Pte. Ltd.(EEA·영국·스위스: TikTok Technology Limited) — TikTok For Business</td><td><strong>독립적 처리자</strong>(제3자 제공)</td><td>광고 ID, 설치·광고 성과 측정 이벤트(AppsFlyer를 통해 전달)</td><td>TikTok 광고 성과 측정·최적화</td><td>싱가포르, 미국, 말레이시아 및 TikTok 운영 국가</td><td>TikTok 보관 정책</td></tr><tr><td>Meta Platforms, Inc.(EEA·영국·스위스: Meta Platforms Ireland Ltd.) — Meta 광고</td><td><strong>독립적 처리자</strong>(제3자 제공)</td><td>광고 ID, 설치·광고 성과 측정 이벤트(AppsFlyer를 통해 전달)</td><td>Facebook·Instagram 광고 성과 측정·최적화</td><td>미국 및 Meta 운영 국가</td><td>Meta 보관 정책</td></tr><tr><td>Google LLC — Google Ads</td><td><strong>독립적 처리자</strong>(제3자 제공)</td><td>광고 ID, 설치·광고 성과 측정 이벤트(AppsFlyer 또는 Firebase를 통해 전달)</td><td>Google 광고 성과 측정·최적화</td><td>미국 및 Google 운영 국가</td><td>Google 보관 정책</td></tr></tbody></table></div>
+<p>TikTok, Meta, Google은 이 정보를 이미 가지고 있는 정보(예: 이용자가 해당 서비스를 쓰는 경우)와 결합해 각자의 개인정보처리방침에 따라 광고 전달을 측정·개선하는 데 쓸 수 있습니다.</p>
+<p>자세히 보기: <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google 서비스를 사용하는 앱의 정보 사용 방식</a> · <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a> · <a href="https://play.google.com/about/play-terms/">Google Play 서비스 약관</a> · <a href="https://www.appsflyer.com/legal/privacy-policy/">AppsFlyer 개인정보처리방침</a> · <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok 개인정보처리방침</a> · <a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a></p>
 <p>합병, 인수, 영업 양도 등이 있으면 개인정보가 승계인에게 이전될 수 있으며, 승계인은 이 방침을 따릅니다. 이 경우 미리 알려 드립니다.</p>
 <hr>
 <h2 id="7-국외-이전">7. 국외 이전</h2>
-<p>운영자는 대한민국에 있으며, Google은 미국 등 여러 국가에서 데이터를 처리합니다. 이 국가들의 보호 수준은 이용자 국가와 다를 수 있습니다.</p>
+<p>운영자는 대한민국에 있으며, Google, AppsFlyer, TikTok, Meta는 미국, 이스라엘, 유럽연합, 싱가포르, 말레이시아 등 여러 국가에서 데이터를 처리합니다. 이 국가들의 보호 수준은 이용자 국가와 다를 수 있습니다.</p>
 <ul>
-<li><strong>EEA·영국·스위스에서 이전:</strong> Google LLC는 EU-미국 데이터 프라이버시 프레임워크, 영국 확장, 스위스-미국 데이터 프라이버시 프레임워크 인증을 받았으며(GDPR 제45조), 표준계약조항도 적용합니다(GDPR 제46조). 대한민국으로의 이전은 2021년 12월 17일 EU 집행위원회의 적정성 결정이 적용됩니다.
+<li><strong>EEA·영국·스위스에서 이전:</strong> Google LLC는 EU-미국 데이터 프라이버시 프레임워크, 영국 확장, 스위스-미국 데이터 프라이버시 프레임워크 인증을 받았으며(GDPR 제45조), 표준계약조항도 적용합니다(GDPR 제46조). 대한민국으로의 이전은 2021년 12월 17일 EU 집행위원회의 적정성 결정이, 이스라엘(AppsFlyer)로의 이전은 EU 집행위원회의 이스라엘 적정성 결정이 적용됩니다. 그 밖의 받는 자에게는 인증을 받은 경우 EU-미국 데이터 프라이버시 프레임워크를, 그렇지 않으면 받는 자가 제공하는 표준계약조항을 적용합니다.
 </li>
 <li><strong>대한민국에서 이전:</strong> 개인정보 보호법 제28조의8에 따른 사항은 12.4에 적었습니다.
 </li>
 <li><strong>이전 시기·방법:</strong> 앱을 이용하는 동안 암호화된 연결(HTTPS/TLS)로 자동 전송됩니다.
 </li>
-<li><strong>거부 방법:</strong> 설정 &gt; 개인정보 선택(표시되는 경우) 또는 설정 &gt; 맞춤형 광고(한국)에서 분석·맞춤형 광고 동의를 철회하고, Android 설정에서 광고 ID를 삭제할 수 있습니다. 핵심 기능(오류 보고, 알림, 설정)에 필요한 이전은 앱 이용을 중단하고 삭제해야 멈춥니다.
+<li><strong>거부 방법:</strong> 설정 &gt; 개인정보 선택(표시되는 경우) 또는 설정 &gt; 맞춤형 광고(한국)에서 분석·맞춤형 광고·광고 성과 측정 동의를 철회하고, Android 설정에서 광고 ID를 삭제할 수 있습니다. 핵심 기능(오류 보고, 알림, 설정)에 필요한 이전은 앱 이용을 중단하고 삭제해야 멈춥니다.
 </li></ul>
 <hr>
 <h2 id="8-보유-기간과-파기">8. 보유 기간과 파기</h2>
-<div class="table-wrap"><table><thead><tr><th>항목</th><th>보유 기간</th></tr></thead><tbody><tr><td>분석 데이터(Firebase Analytics)</td><td>수집일로부터 2개월</td></tr><tr><td>오류 보고(Crashlytics)</td><td>90일</td></tr><tr><td>FCM 토큰, Firebase 설치 ID</td><td>앱 삭제 시 또는 토큰 만료(270일 미사용) 시까지</td></tr><tr><td>광고 데이터(AdMob)</td><td>Google 보관 정책에 따름(일반적으로 최대 약 2년)</td></tr><tr><td>동의 기록</td><td>앱 삭제 또는 선택 변경 시까지 기기에 보관</td></tr><tr><td>계약·청약철회·대금결제 기록</td><td>5년(「전자상거래 등에서의 소비자보호에 관한 법률」 제6조 및 같은 법 시행령 제6조) 또는 다른 법령이 정한 기간</td></tr><tr><td>소비자 불만·분쟁 처리 기록</td><td>3년(같은 법)</td></tr><tr><td>문의 이메일</td><td>처리 완료 후 1년</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>항목</th><th>보유 기간</th></tr></thead><tbody><tr><td>분석 데이터(Firebase Analytics)</td><td>수집일로부터 2개월</td></tr><tr><td>오류 보고(Crashlytics)</td><td>90일</td></tr><tr><td>FCM 토큰, Firebase 설치 ID</td><td>앱 삭제 시 또는 토큰 만료(270일 미사용) 시까지</td></tr><tr><td>광고 데이터(AdMob)</td><td>Google 보관 정책에 따름(일반적으로 최대 약 2년)</td></tr><tr><td>광고 성과 측정 정보(AppsFlyer)</td><td>수집일로부터 최대 24개월 후 삭제</td></tr><tr><td>TikTok, Meta, Google Ads가 받은 광고 성과 측정 정보</td><td>각 회사의 보관 정책에 따름</td></tr><tr><td>동의 기록</td><td>앱 삭제 또는 선택 변경 시까지 기기에 보관</td></tr><tr><td>계약·청약철회·대금결제 기록</td><td>5년(「전자상거래 등에서의 소비자보호에 관한 법률」 제6조 및 같은 법 시행령 제6조) 또는 다른 법령이 정한 기간</td></tr><tr><td>소비자 불만·분쟁 처리 기록</td><td>3년(같은 법)</td></tr><tr><td>문의 이메일</td><td>처리 완료 후 1년</td></tr></tbody></table></div>
 <p>기기에 저장된 데이터(받은 미디어, 라이브러리, 보관함, 설정)는 앱 데이터를 지우거나 앱을 삭제하면 삭제됩니다. <strong>갤러리에 저장한 파일은</strong> 앱을 삭제해도 남습니다.</p>
 <p>보유 기간이 끝나면 전자 파일은 복구할 수 없는 방법으로 삭제하고, 종이 문서는 분쇄합니다. 법령에 따라 보관하는 정보는 다른 정보와 분리하여 해당 목적으로만 이용합니다.</p>
 <hr>
@@ -121,7 +124,7 @@ footer>a{margin-right:14px}
 <ul>
 <li>전송 구간을 암호화(HTTPS/TLS)합니다.
 </li>
-<li>Google Firebase, AdMob, Play Console 접근 권한은 {{OPERATOR_NAME}}으로 한정하고 2단계 인증으로 보호합니다.
+<li>Google Firebase, AdMob, Play Console, AppsFlyer, TikTok·Meta·Google Ads 광고 계정 접근 권한은 {{OPERATOR_NAME}}으로 한정하고 2단계 인증으로 보호합니다.
 </li>
 <li>필요한 정보만 수집하며, 운영자 서버에 개인정보를 저장하지 않습니다.
 </li>
@@ -167,7 +170,7 @@ footer>a{margin-right:14px}
 <h2 id="12-지역별-추가-안내">12. 지역별 추가 안내</h2>
 <h3 id="121-유럽경제지역eea-영국-스위스">12.1 유럽경제지역(EEA), 영국, 스위스</h3>
 <ul>
-<li><strong>동의:</strong> 처음 실행할 때 Google 동의 화면(IAB TCF 인증)을 보여 줍니다. 선택하기 전에는 동의 기반 처리(분석, 광고 저장, 맞춤형 광고)를 하지 않으며 Firebase Analytics도 꺼져 있습니다. <strong>설정 &gt; 개인정보 선택</strong>에서 언제든지 바꿀 수 있습니다.
+<li><strong>동의:</strong> 처음 실행할 때 Google 동의 화면(IAB TCF 인증)을 보여 줍니다. 선택하기 전에는 동의 기반 처리(분석, 광고 저장, 맞춤형 광고, 광고 성과 측정)를 하지 않으며 Firebase Analytics도 꺼져 있고 AppsFlyer에도 보내지 않습니다. AppsFlyer, TikTok, Meta는 동의 화면에서의 선택이 허용하는 경우에만 정보를 받습니다. <strong>설정 &gt; 개인정보 선택</strong>에서 언제든지 바꿀 수 있습니다.
 </li>
 <li><strong>EU·영국 대리인:</strong> GDPR 제27조에 따른 대리인은 지정하지 않았습니다. {{CONTACT_EMAIL}}로 직접 연락하실 수 있습니다.
 </li>
@@ -180,7 +183,7 @@ footer>a{margin-right:14px}
 </li>
 <li><strong>민감한 개인정보:</strong> 수집하지 않습니다.
 </li>
-<li><strong>판매·공유:</strong> 개인정보를 돈을 받고 팔지 않습니다. AdMob의 <strong>맞춤형 광고</strong>는 교차 맥락 행동 광고를 위한 "판매·공유"로 볼 수 있습니다. <strong>거부하려면</strong> <strong>설정 &gt; 개인정보 선택</strong>(개인정보 보호법이 있는 미국 각 주 이용자에게 표시되며, 개인정보 판매·공유를 거부할 수 있음)을 이용하거나, Android 설정 &gt; Google &gt; 광고에서 광고 ID를 삭제·재설정하거나, {{CONTACT_EMAIL}}로 요청하세요.
+<li><strong>판매·공유:</strong> 개인정보를 돈을 받고 팔지 않습니다. AdMob의 <strong>맞춤형 광고</strong>와, 광고 성과 측정·최적화를 위해 설치·광고 성과 측정 이벤트를 TikTok, Meta, Google Ads와 공유하는 것은 교차 맥락 행동 광고를 위한 "판매·공유"로 볼 수 있습니다. 거부하면 이 공유를 멈춥니다. <strong>거부하려면</strong> <strong>설정 &gt; 개인정보 선택</strong>(개인정보 보호법이 있는 미국 각 주 이용자에게 표시되며, 개인정보 판매·공유를 거부할 수 있음)을 이용하거나, Android 설정 &gt; Google &gt; 광고에서 광고 ID를 삭제·재설정하거나, {{CONTACT_EMAIL}}로 요청하세요.
 </li>
 <li><strong>16세 미만:</strong> 16세 미만 소비자의 개인정보를 알면서 판매·공유하지 않습니다.
 </li>
@@ -191,10 +194,17 @@ footer>a{margin-right:14px}
 <h3 id="124-대한민국개인정보-보호법">12.4 대한민국(개인정보 보호법)</h3>
 <p>개인정보 보호법 제30조 및 같은 법 시행령 제31조가 정한 사항입니다.</p>
 <p><strong>(가) 개인정보의 국외 이전(제28조의8)</strong></p>
-<div class="table-wrap"><table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>이전받는 자 및 연락처</td><td>Google LLC (privacy@google.com, <a href="https://support.google.com/policies/troubleshooter/7575787?hl=ko">Google 개인정보 문의</a>)</td></tr><tr><td>이전 국가</td><td>미국 및 Google이 데이터센터를 운영하는 국가</td></tr><tr><td>이전 항목</td><td>3조의 식별자, 기기 정보, 네트워크 정보, 앱 이용 기록, 오류 정보, 구매 정보</td></tr><tr><td>이용 목적</td><td>6조 참고</td></tr><tr><td>이전 시기·방법</td><td>앱 이용 중 네트워크(HTTPS)로 전송</td></tr><tr><td>보유 기간</td><td>8조 참고</td></tr><tr><td>법적 근거</td><td>Firebase·Google Play: 이용자와의 계약 체결·이행을 위해 필요한 처리위탁·보관으로서 이 방침에 공개(제28조의8 제1항 제3호 가목). AdMob 맞춤형 광고: [선택] 항목에 체크한 경우에만 받는 별도 동의(제28조의8 제1항 제1호). 동의하지 않으면 이용자를 알아볼 수 있는 정보와 결합하지 않은 가명의 온라인 식별자(광고 ID, 앱 세트 ID)와 기기 정보만 비맞춤형 광고를 위해 전달</td></tr><tr><td>거부 방법 및 효과</td><td>[선택] 항목에 체크하지 않거나 <strong>설정 &gt; 맞춤형 광고</strong>를 끄기(비맞춤형 광고가 표시되며 모든 기능 이용 가능), Android 설정 &gt; Google &gt; 광고에서 광고 ID 삭제, 또는 앱 이용 중단·삭제. 핵심 기능에 필요한 이전을 거부하면 앱을 이용할 수 없습니다.</td></tr></tbody></table></div>
-<p><strong>(나) 행태정보의 수집·이용·제공 및 거부(맞춤형 광고)</strong></p>
-<div class="table-wrap"><table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>수집하는 행태정보</td><td>광고 ID, 앱 내 광고 노출·클릭 기록, 앱 이용 정보, 기기·네트워크 정보</td></tr><tr><td>수집 방법</td><td>앱 이용 중 Google AdMob SDK가 자동 수집</td></tr><tr><td>이용 목적</td><td>이용자의 관심사에 맞춘 광고(맞춤형 광고) 제공</td></tr><tr><td>수집·처리하는 자</td><td>Google LLC(미국) — 직접 수집·처리</td></tr><tr><td>보유 기간</td><td>Google 보관 정책에 따름(일반적으로 최대 약 2년) 또는 동의 철회 시까지</td></tr><tr><td>이용자의 선택</td><td>첫 실행 화면의 <strong>[선택] 항목에 체크한 경우에만</strong> 맞춤형 광고를 보여 줍니다. 기본값은 체크 해제이며, 동의하지 않아도 모든 기능을 이용할 수 있고 비맞춤형 광고가 표시됩니다. <strong>설정 &gt; 맞춤형 광고</strong>에서 언제든지 철회할 수 있으며, Android 설정 &gt; Google &gt; 광고에서 광고 ID를 삭제할 수도 있습니다.</td></tr></tbody></table></div>
-<p>동의하지 않으면 AdMob은 비맞춤형 광고 전달, 같은 광고의 노출 빈도 제한, 광고 성과 측정, 부정 방지를 위해서만 광고 ID·기기 정보·광고 반응을 이용하며, 이 앱의 광고를 관심사 기반으로 고르는 데에는 사용하지 않습니다. 만 14세 미만으로 확인된 이용자에게는 맞춤형 광고를 보여 주지 않습니다.</p>
+<div class="table-wrap"><table><thead><tr><th>이전받는 자 및 연락처</th><th>이전 국가</th><th>이전 항목</th><th>이용 목적</th><th>보유 기간</th><th>법적 근거</th></tr></thead><tbody><tr><td>Google LLC — Firebase, Google Play (privacy@google.com, <a href="https://support.google.com/policies/troubleshooter/7575787?hl=ko">Google 개인정보 문의</a>)</td><td>미국 및 Google이 데이터센터를 운영하는 국가</td><td>3조의 식별자, 기기 정보, 네트워크 정보, 앱 이용 기록, 오류 정보, 구매 정보</td><td>분석, 오류 보고, 알림, 원격 설정, 결제(6조)</td><td>8조 참고</td><td>이용자와의 계약 체결·이행을 위해 필요한 처리위탁·보관으로서 이 방침에 공개(제28조의8 제1항 제3호 가목)</td></tr><tr><td>Google LLC — AdMob, Google Ads (위와 같은 연락처)</td><td>위와 같음</td><td>광고 ID, 앱 세트 ID, 기기 정보, 광고 반응. Google Ads는 설치·광고 성과 측정 이벤트</td><td>맞춤형 광고, Google 광고 성과 측정·최적화</td><td>Google 보관 정책(일반적으로 최대 약 2년) 또는 동의 철회 시까지</td><td>[선택] 항목에 체크한 경우에만 받는 별도 동의(제28조의8 제1항 제1호)</td></tr><tr><td>AppsFlyer Ltd. (<a href="https://www.appsflyer.com/legal/privacy-policy/">AppsFlyer 개인정보처리방침</a>, privacy@appsflyer.com)</td><td>이스라엘, 유럽연합, 미국</td><td>광고 ID, AppsFlyer ID, 설치 경로, IP 주소, 기기 정보, 광고 성과 측정 이벤트</td><td>어떤 광고로 설치·구독했는지 측정</td><td>최대 24개월 또는 동의 철회 시까지</td><td>별도 동의(제28조의8 제1항 제1호)</td></tr><tr><td>TikTok Pte. Ltd. (<a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok 개인정보처리방침</a>)</td><td>싱가포르, 미국, 말레이시아 및 TikTok 운영 국가</td><td>광고 ID, 설치·광고 성과 측정 이벤트</td><td>TikTok 광고 성과 측정·최적화</td><td>TikTok 보관 정책 또는 동의 철회 시까지</td><td>별도 동의(제28조의8 제1항 제1호)</td></tr><tr><td>Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a>)</td><td>미국 및 Meta 운영 국가</td><td>광고 ID, 설치·광고 성과 측정 이벤트</td><td>Facebook·Instagram 광고 성과 측정·최적화</td><td>Meta 보관 정책 또는 동의 철회 시까지</td><td>별도 동의(제28조의8 제1항 제1호)</td></tr></tbody></table></div>
+<ul>
+<li><strong>이전 시기·방법:</strong> 앱 이용 중 네트워크(HTTPS)로 전송
+</li>
+<li><strong>[선택] 동의를 하지 않으면:</strong> 이용자를 알아볼 수 있는 정보와 결합하지 않은 가명의 온라인 식별자(광고 ID, 앱 세트 ID)와 기기 정보만 비맞춤형 광고를 위해 Google AdMob에 전달합니다. AppsFlyer, TikTok, Meta와 광고 성과 측정용 Google Ads에는 아무것도 보내지 않습니다.
+</li>
+<li><strong>거부 방법 및 효과:</strong> [선택] 항목에 체크하지 않거나 <strong>설정 &gt; 맞춤형 광고</strong>를 끄기(비맞춤형 광고가 표시되며 모든 기능 이용 가능), Android 설정 &gt; Google &gt; 광고에서 광고 ID 삭제, 또는 앱 이용 중단·삭제. 핵심 기능에 필요한 이전(첫 번째 행)을 거부하면 앱을 이용할 수 없습니다.
+</li></ul>
+<p><strong>(나) 행태정보의 수집·이용·제공 및 거부(맞춤형 광고·광고 성과 측정)</strong></p>
+<div class="table-wrap"><table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>수집하는 행태정보</td><td>광고 ID, 앱 내 광고 노출·클릭 기록, 앱 이용 정보, 기기·네트워크 정보. 광고 성과 측정용으로 설치 경로와 광고 성과 측정 이벤트(첫 다운로드 완료, VIP 구독 시작·갱신)</td></tr><tr><td>수집 방법</td><td>앱 이용 중 Google AdMob SDK와 AppsFlyer SDK가 자동 수집</td></tr><tr><td>이용 목적</td><td>이용자의 관심사에 맞춘 광고(맞춤형 광고) 제공, TikTok·Meta·Google Ads의 운영자 광고 중 어떤 광고로 설치·구독했는지 측정하고 광고를 개선</td></tr><tr><td>수집·처리하는 자</td><td>Google LLC(미국) — AdMob 정보를 직접 수집·처리. AppsFlyer Ltd.(이스라엘) — 운영자를 대신해 측정하고 결과를 TikTok Pte. Ltd.(싱가포르), Meta Platforms, Inc.(미국), Google LLC(Google Ads)에 전달</td></tr><tr><td>보유 기간</td><td>AdMob: Google 보관 정책(일반적으로 최대 약 2년), AppsFlyer: 최대 24개월, TikTok·Meta·Google Ads: 각 회사 정책 — 또는 동의 철회 시까지</td></tr><tr><td>이용자의 선택</td><td>첫 실행 화면의 <strong>[선택] 항목에 체크한 경우에만</strong> 맞춤형 광고와 광고 성과 측정을 합니다. 기본값은 체크 해제이며, 동의하지 않아도 모든 기능을 이용할 수 있고 비맞춤형 광고가 표시됩니다. <strong>설정 &gt; 맞춤형 광고</strong>에서 언제든지 철회할 수 있으며, Android 설정 &gt; Google &gt; 광고에서 광고 ID를 삭제할 수도 있습니다.</td></tr></tbody></table></div>
+<p>동의하지 않으면 AdMob은 비맞춤형 광고 전달, 같은 광고의 노출 빈도 제한, 광고 성과 측정, 부정 방지를 위해서만 광고 ID·기기 정보·광고 반응을 이용하며, 이 앱의 광고를 관심사 기반으로 고르는 데에는 사용하지 않습니다. 앱은 AppsFlyer, TikTok, Meta에 정보를 보내지 않습니다. 만 14세 미만으로 확인된 이용자에게는 맞춤형 광고를 보여 주지 않습니다.</p>
 <p><strong>(다) 개인정보 자동 수집 장치의 설치·운영 및 거부.</strong> 앱은 웹 쿠키를 사용하지 않습니다. 쿠키와 비슷하게 작동하는 SDK 식별자·광고 ID와 거부 방법은 <a href="../ko/cookie-policy.html">쿠키 및 추적 기술 정책</a>에 적었습니다.</p>
 <p><strong>(라) 파기 절차와 방법.</strong> 8조 참고</p>
 <p><strong>(마) 개인정보 보호책임자.</strong> {{OPERATOR_NAME}}(운영자) · {{CONTACT_EMAIL}}</p>
