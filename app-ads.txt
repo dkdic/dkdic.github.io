@@ -1,3 +1,27 @@
-# app-ads.txt for Kanga
-# Placeholder. Add the AdMob line when the publisher ID is ready:
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# app-ads.txt for Kanga (ads served through AppLovin MAX)
+#
+# Placeholder: no ad accounts yet. Ad networks ignore lines starting with "#".
+# When the accounts are ready, replace this file with the full list from
+# AppLovin dashboard > MAX > Account > app-ads.txt. That list includes the
+# AppLovin line and the lines of every mediated network with your own publisher IDs.
+# Format: <ad system domain>, <your publisher/account ID>, DIRECT|RESELLER, <certification authority ID (optional)>
+#
+# AppLovin Exchange / MAX
+# applovin.com, <APPLOVIN_ACCOUNT_ID>, DIRECT, <CERT_ID>
+# Mintegral
+# mintegral.com, <MINTEGRAL_PUBLISHER_ID>, DIRECT, <CERT_ID>
+# Unity Ads
+# unity.com, <UNITY_ORGANIZATION_CORE_ID>, DIRECT, <CERT_ID>
+# Liftoff Monetize (Vungle)
+# vungle.com, <LIFTOFF_PUBLISHER_ID>, DIRECT, <CERT_ID>
+# InMobi
+# inmobi.com, <INMOBI_ACCOUNT_ID>, DIRECT, <CERT_ID>
+# BIGO Ads
+# bigo.sg, <BIGO_PUBLISHER_ID>, DIRECT
+# DT Exchange (Digital Turbine / Fyber)
+# fyber.com, <DT_APP_OR_PUBLISHER_ID>, DIRECT
+# Moloco
+# moloco.com, <MOLOCO_PUBLISHER_ID>, DIRECT
+#
+# Also add the RESELLER lines that each network gives you.
+# AdMob is no longer an ad source (Google UMP is only used for consent), so no google.com line is needed.
