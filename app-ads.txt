@@ -1,4 +1,4 @@
-# app-ads.txt for Kanga (ads served through AppLovin MAX)
+# app-ads.txt for K Saver (ads served through AppLovin MAX)
 #
 # Placeholder: no ad accounts yet. Ad networks ignore lines starting with "#".
 # When the accounts are ready, replace this file with the full list from
